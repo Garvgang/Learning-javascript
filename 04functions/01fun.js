@@ -17,7 +17,7 @@ function calc(...num1){
     return num1
 }
 // use case of rest 
-console.log(calc(200,3000,10,203,032)) //gives an array of these values
+console.log(calc(200,3000,10,203,32)) //gives an array of these values
 
 // passing objects in a funstion
 const obj={
