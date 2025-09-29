@@ -37,7 +37,7 @@ function addTwo(num1,num2){
 // we got the answer even before its decalartion
 // now see a different one
 // if we use ity before decalaration we get an error
-console.log(sum(2,13))
-const sum=function(num1,num2){
-    return num1+num2;
-}
+// console.log(sum(2,13))
+// const sum=function(num1,num2){
+//     return num1+num2;
+// }
