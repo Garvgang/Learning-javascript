@@ -17,11 +17,23 @@
 // chai() //getting undefined
 
 // ARROW FUNCTION 
-const chai= () =>{
-    let username='Garv';
-    console.log(this.username)
-}
+// const chai= () =>{
+//     let username='Garv';
+//     console.log(this.username)
+// }
 // chai()
+// difference between arrow and simple function in js is :-
+// const obj = {
+//   name: "Garv",
+//   normal: function () {
+//     console.log(this.name); // "Garv" ✅
+//   },
+//   arrow: () => {
+//     console.log(this.name); // undefined ❌ (takes from outer scope, not obj)
+//   }
+// }
+// obj.normal();
+// obj.arrow();
 
 // arrow function :Implict return
 // const addTwo =(num1,num2) => (num2+num1);
