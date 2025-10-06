@@ -24,3 +24,7 @@ for(const [key,value] of map){
 // for(const [key,value] of myObj){
 //     console.log(key+'-'+value)
 // }
+const greeting="Hello world";
+for (const greet of greeting) {
+    console.log(greet);
+}
