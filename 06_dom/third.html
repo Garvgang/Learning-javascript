@@ -13,6 +13,15 @@
     console.log(div);
     div.className="main";
     div.id=Math.round(Math.random()*10+1);
-    
+    div.setAttribute("title","generated_title"); //=>(key,value)
+    div.style.backgroundColor="green";
+    div.style.padding="12px";
+    // div.innerText="Hi this is the div where we are writing the code";
+    // we don't use the above method as it overwrites the value 
+    //  first it selects the value then overwrite it
+    // instead we prefer the createTextNode as it directly overwrites the text
+    const addText=document.createTextNode("Hi this is the div where we are writing the code")  
+    div.appendChild(addText);
+    document.body.appendChild(div);
 </script>
 </html>
