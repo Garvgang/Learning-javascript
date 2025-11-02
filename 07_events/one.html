@@ -44,10 +44,18 @@
     //     e.stopPropagation();
     // },false)
     
-    document.getElementById('google').addEventListener('click',function(e){
-        e.preventDefault();
-        console.log("google clicked");
+    //document.getElementById('google').addEventListener('click',function(e){
+    //    e.preventDefault();
+    //    console.log("google clicked");
+    // })
 
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName==='IMG'){
+            let removeIt=e.target.parentNode;
+            removeIt.remove()
+            // this was used earlier :removeIt.parentNode.removeChild(removeIt);
+        }
     })
 </script>
 </html>
