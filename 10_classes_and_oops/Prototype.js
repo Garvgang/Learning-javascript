@@ -22,7 +22,7 @@ Array.prototype.heygarv=function(){
 // heroPower.garv();
 // myheros.garv();
 // heroPower.heygarv(); //This gives error because when method heygarv was made it was for Arrays only not for any other type(like object)
-console.log(typeof heroPower);
+// console.log(typeof heroPower);
 
 // Inheritance
 const Teacher={
@@ -34,4 +34,17 @@ const TeachingSupprt={
 const TASupport={
     makeAssignment:'JS Assignment',
     fullTime:true,
+    __proto__:TeachingSupprt
 }
+// Teacher.__proto__=User
+// Mordern Syntax
+Object.setPrototypeOf(TeachingSupprt,Teacher);
+
+let anotherUser="Chai Aur Code    ";
+
+String.prototype.trueLength=function(){
+    console.log(`${this}`);
+    console.log(`${this.name}`); 
+    console.log(`True length is : ${this.trim().length}`);    
+}
+anotherUser.trueLength();
