@@ -14,9 +14,12 @@ let myTimeStamp=Date.now()
 // console.log(myTimeStamp)
 // console.log(nmyCreateDate.getTime())
 console.log(Math.floor(Date.now()/1000))
-
+let nwDate = new Date()
+console.log(nwDate);
+console.log(nwDate.getMonth() + 1);
+console.log(nwDate.getDay());
 // now lets talk about one of the mmost imp functions 
-let hiDate=new Date()
-bday=hiDate.toLocaleDateString('default',{
-    weekday:"Long",
-})
+// let hiDate=new Date()
+// bday=hiDate.toLocaleDateString('default',{
+//     weekday:"Long",
+// })
